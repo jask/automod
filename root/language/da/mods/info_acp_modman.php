@@ -4,8 +4,7 @@
 * AutoMOD [Danish]
 *
 * @package language
-* @phpBB source Id: info_acp_modman.php 138 2008-12-31 13:31:22Z paul $
-* @version $Id: info_acp_modman.php 14 2010-02-07 14:46:26Z jan skovsgaard $
+* @version $Id$
 * @copyright (c) 2008 phpBB Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 * @translated by Olympus DK Team
@@ -45,7 +44,7 @@ $lang = array_merge($lang, array(
 	'ACP_AUTOMOD_CONFIG'	=> 'AutoMOD konfiguration',
 
 	'LOG_MOD_ADD'		=> '<strong>Nyt MOD tilføjet</strong><br />» %s',
-	'LOG_MOD_CHANGE'	=> '<strong>Komponenter ændret for MOD</strong><br />» %x',
+	'LOG_MOD_CHANGE'	=> '<strong>Komponenter ændret for MOD</strong><br />» %s',
 	'LOG_MOD_REMOVE'	=> '<strong>MOD slettet</strong><br />» %s',
 
 	'MOD_CHANGELOG'		=> 'MOD ændringslog',

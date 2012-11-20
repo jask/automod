@@ -4,8 +4,7 @@
 * acp_mods [Danish]
 *
 * @package language
-* @phpBB source Id: mods.php 238 2010-04-25 03:28:53Z jelly_doughnut $
-* @version $Id: mods.php 50 2010-04-28 16:25:14Z jan skovsgaard $
+* @version $Id$
 * @copyright (c) 2008 phpBB Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 * @translated by Olympus DK Team
@@ -41,6 +40,7 @@ $lang = array_merge($lang, array(
 	'ADDITIONAL_CHANGES'	=> 'Tilgængelige ændringer',
 
 	'AM_MOD_ALREADY_INSTALLED'	=> 'AutoMOD konstaterer at dette MOD allerede er installeret og kan ikke fortsætte.',
+	'AM_MOD_NOT_INSTALLED'	=> 'AutoMOD konstaterer at dette MOD endnu ikke er installeret og kan ikke fortsætte.',
 	'AM_MANUAL_INSTRUCTIONS'	=> 'AutoMOD sender en komprimeret fil til din computer. På grund af AutoMOD-konfiguration kan filer ikke skrives direkte til dit site automatisk. Derfor skal du udpakke filen og uploade de indeholdte filer manuelt til din server. Modtog du ikke filen automatisk, klik %sher%s.',
 
 	'AUTHOR_EMAIL'			=> 'Emailadresse',
@@ -61,9 +61,9 @@ $lang = array_merge($lang, array(
 	'CHANGES'		=> 'Ændringer',
 	'CHECK_AGAIN'  => 'Kontroller igen',
 	'CLICK_HIDE_FILES' => 'Klik for at skjule filer uden fejl',
-	'CLICK_HIDE_EDITS' => 'Klik for at skjule ændringer foretaget uden fejl',
+	'CLICK_HIDE_EDITS' => 'Klik for at skjule ændringer uden fejl',
 	'CLICK_SHOW_FILES' => 'Klik for at vise alle filer',
-	'CLICK_SHOW_EDITS' => 'Klik for at vise alle ændringer foretaget',
+	'CLICK_SHOW_EDITS' => 'Klik for at vise alle ændringer',
 	'COMMENT'		=> 'Kommentar',
 	'CREATE_TABLE'	=> 'Databaseændringer',
 	'CREATE_TABLE_EXPLAIN'	=> 'AutoMOD har udført databaseændringerne, inklusiv en MOD-tilladelse som er blevet tilknyttet rollen "Fuldgyldig administrator".',
@@ -74,7 +74,7 @@ $lang = array_merge($lang, array(
 
 	'DIR_PERMS'			=> 'Mappetilladelser',
 	'DIR_PERMS_EXPLAIN'	=> 'Nogle systemer forudsætter at mapper er tildelt bestemte tilladelser for at fungere. Almindeligvis er standarden 0755 korrekt. Denne indstilling har ingen indflydelse på Windows-baserede systemer.',
-	'DIY_INSTRUCTIONS'	=> 'Gør-det-selv anvisninger. Disse instrukser skal udføres manuelt, før installatationen af MODet er fuldendt.',
+	'DIY_INSTRUCTIONS'	=> 'Gør-det-selv anvisninger. Disse instrukser skal udføres manuelt, før installationen af MODet er fuldendt.',
 	'DEPENDENCY_INSTRUCTIONS'	=> 'Det MOD du forsøger at installere er afhængig af et andet MOD. AutoMOD kan ikke detektere om dette MOD er installeret. Bekræft venligst om MOD\'et <strong><a href="%1$s">%2$s</a></strong> er installeret ved at klikke på fortsæt.',
 	'DESCRIPTION'	=> 'Beskrivelse',
 	'DETAILS'		=> 'Detaljer',
@@ -109,7 +109,8 @@ $lang = array_merge($lang, array(
 	'INLINE_EDIT_ERROR' => 'Der opstod en fejl, fordi en in-line ændring angivet i MODX-installationsfilen mangler alle krævede elementer', 
 	'INSTALL_AUTOMOD'	=> 'AutoMOD Installation',
 	'INSTALL_AUTOMOD_CONFIRM' => 'Er du sikker på at du vil installere AutoMOD?',
-	'INSTALL_TIME'		=> 'Installeret',
+	'INSTALL_DATE'      => 'Dato for installation',
+	'INSTALL_TIME'		=> 'Tidspunkt for installation',
 	'INSTALL_MOD'		=> 'Installer dette MOD',
 	'INSTALL_ERROR'		=> 'En eller flere handlinger i forbindelse med installationen fejlede. Gennemgå venligst nedenstående hændelser, foretag de nødvendige justeringer og prøv igen. Det er muligt at fortsætte installationen selvom nogle af handlingerne fejlede. <strong>Det frarådes imidlertid, det kan medføre at dit board ikke fungerer korrekt.</strong>',
 	'INSTALL_FORCED'	=> 'Du gennemtvang installationen af dette MOD selvom der opstod fejl undervejs. Dit board kan derfor være ude af funktion. Bemærk venligst de fejlede handlinger nedenfor og ret disse.',
@@ -147,7 +148,7 @@ $lang = array_merge($lang, array(
 	'MODS_MKDIR_FAILED'			=> 'Mappen %s kunne ikke oprettes',
 	'MODS_RMDIR_FAILURE'    => 'Mappen %s kunne ikke slettes',
 	'MODS_RMFILE_FAILURE'    => 'Filen %s kunne ikke slettes',
-	'MODS_NOT_WRITABLE'      => 'Der kan ikke skrives til mappen store/mods/, hvilket er et krav for at “Upload MOD” virker korrekt, med mindre du "skrivemetode" til “FTP”. Juster venligst dine tilladelser eller indstillinger og prøv igen.',
+	'MODS_NOT_WRITABLE'      => 'Der kan ikke skrives til mappen store/mods/, hvilket er et krav for at “Upload MOD” virker korrekt, med mindre du vælger "skrivemetode" til "FTP". Juster venligst dine tilladelser eller indstillinger og prøv igen.',
 	'MODS_SETUP_INCOMPLETE'		=> 'Der blive konstateret et problem i din konfiguration som bevirker at AutoMOD ikke fungerer. Det burde kun opstå hvis indstillinger som f.eks FTP-brugernavn og andet er blevet ændret, men ikke ændret tilsvarende konfigurationen af AutoMOD.',
 
 	'NAME'			=> 'Navn',
@@ -177,6 +178,8 @@ $lang = array_merge($lang, array(
 	'ROOT_NOT_READABLE'	=> 'AutoMOD kunne læse phpBB\'s fil index.php. Det skyldes formentlig at tilladelser er for restriktive i rod-mappen, og det forhindrer AutoMOD i at fungere. Prøv venligst at justere tilladelser og udfør kontrollen igen.',
 
 
+	'SORT_NAME'		=> 'Navn',
+	'SORT_DATE'		=> 'Dato',
 	'SOURCE'		=> 'Kilde',
 	'SQL_QUERIES'	=> 'SQL-forespørgsler',
 	'STATUS'		=> 'Status',
@@ -187,6 +190,7 @@ $lang = array_merge($lang, array(
 	'SUCCESS'		=> 'Udført',
 
 	'TARGET'		=> 'Mål',
+	'TARGET_VERSION'	=> 'phpBB målversion',
 
 	'UNKNOWN_MOD_AUTHOR-NOTES'	=> 'Ingen udviklernoter anført.',
 	'UNKNOWN_MOD_DESCRIPTION'		=> '', 
@@ -204,10 +208,12 @@ $lang = array_merge($lang, array(
 	'UNRECOGNISED_COMMAND' => 'Fejl, kommandoen %s kendes ikke', 
 	'UPDATE_AUTOMOD'		=> 'Opdater AutoMOD',
 	'UPDATE_AUTOMOD_CONFIRM'=> 'Bekræft venligst at du ønsker at opdatere AutoMOD.',
-
 	'UPLOAD'				=> 'Upload',
-	'VERSION'			=> 'Version',
 
+	'VERSION'			=> 'Version',
+	'VERSION_WARNING'	=> 'Dette MOD er målrettet phpBB version %1$s, men den version er %2$s. Selv om installationen forløber uden fejlmeldinger, er der risiko for MODet ikke virker som forventet eller risikerer at gøre dit board ubrugeligt. Kontakt MOD-udvikleren for at sikre dig at MODet er kompatibelt med din version af phpBB.',
+
+	'WARNING'				=> 'Advarsel',
 	'WRITE_DIRECT_FAIL'		=> 'AutoMOD kunne ikke kopiere filen %s til rette placering med den direkte metode. Vælg venligst en anden metode og forsøg igen.',
 	'WRITE_DIRECT_TOO_SHORT'	=> 'AutoMOD kunne ikke afslutte skrivning af filen %s. Problemet kan ofte løses med knappen forsøg igen. Virker det stadig ikke, prøv en anden skrivemetode.',
 	'WRITE_MANUAL_FAIL'		=> 'AutoMOD kunne ikke tilføje filen %s til et komprimeret arkiv. Forsøg venligst med en anden skrivemetode.',
